@@ -15,7 +15,7 @@ async function api(path, options = {}) {
   if (res.status === 204) return null
   return res.json()
 }
-
+// app is the function
 function App() {
   const [todos, setTodos] = useState([])
   const [title, setTitle] = useState('')
