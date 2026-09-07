@@ -8,7 +8,7 @@ from .database import Base, engine, get_db
 
 app = FastAPI(
     title="Todo API",
-    description="Sample full-stack backend for the React + Postgres demo",
+    description="Sample full-stack backend for the React + Postgres demo's",
     version="1.0.0",
 )
 
