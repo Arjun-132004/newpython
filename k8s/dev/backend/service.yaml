@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: newpython-backend
+  namespace: storefront-dev012
+  labels:
+    app.kubernetes.io/name: newpython-backend
+    app.kubernetes.io/managed-by: deepagent
+spec:
+  type: ClusterIP
+  selector:
+    app.kubernetes.io/name: newpython-backend
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
